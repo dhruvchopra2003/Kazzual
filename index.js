@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const mongoose = require('mongoose');
+const cookieSession = require('cookie-session');
 
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.json());
@@ -24,8 +25,6 @@ const Contact = require("./src/models/contact"); // Contact info DB
 const venue = require("./src/models/venuelist"); // Location Information DB
 const connection = require("./src/db/connection"); // To Define the connection
 
-
-// for the filtering process
 
 app.listen(port, () => {
   console.log(`app is listening on ${port}`);
@@ -62,6 +61,12 @@ app.get("/signin", (req, res) => {
   res.render("index.ejs");
 })
 
+// TODO: *testing* Setting up a cookie session
+app.use(cookieSession({
+  name: 'session',
+  keys: ['COGPC0648E'],
+  maxAge: 24 * 60 * 60 * 1000, // 1 Day in this example
+}));
 
 // Sign In
 app.post("/signin", async (req, res) => {
@@ -87,6 +92,7 @@ app.post("/signin", async (req, res) => {
 
     // Check if the passwords match
     if (isMatch) {
+      req.session.user = user;
       console.log({ Password, Username });
       res.render("home.ejs", { user });
     } else {
@@ -179,6 +185,13 @@ app.put("/editprofile/:id", async (req, res) => {
 
 });
 
+app.get("/profile", (req, res) => {
+  const user = req.session.user;
+  if (!user) {
+    return res.status(401).send("Unauthorized");
+  }
+  res.render("home.ejs", { user })
+});
 
 app.get("/venues", async (req, res) => {
   const newvenue = await venue.find({});
