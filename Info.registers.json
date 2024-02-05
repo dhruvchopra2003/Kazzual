@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "65bfa059252e39159918f600"
+  },
+  "Username": "Dhruv",
+  "Email": "dhruvchopra2019@gmail.com",
+  "Password": "$2a$12$apZXCiObZR9laLfPd9B5uO7bxDeSI4WK5EPYwIwtnmAA2DCobkfNe",
+  "__v": 0,
+  "Sports": "Cricket",
+  "Location": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "65bfda95252e39159918f614"
+  },
+  "Username": "User2",
+  "Email": "",
+  "Password": "$2a$12$H7TtVWVjub2rbKfFVVV4qe/ZYc4.0xtFu311Hu3aq71WtKH0SFuE6",
+  "__v": 0,
+  "Location": "Kolkata",
+  "Sports": "Football"
+},
+{
+  "_id": {
+    "$oid": "65bfdc2658828e8f82b515fa"
+  },
+  "Username": "user3",
+  "Email": "something@something.com",
+  "Password": "$2a$12$eMpT0wFCUE9a8ioeghuN0.5xVitwdMOfyKVpP4sg1rz8ZzMJgVpR6",
+  "__v": 0,
+  "Contact": 1234567890,
+  "Location": "Kolkata",
+  "Detail": "Some other details",
+  "Sports": "Badminton",
+  "Age": 23
+},
+{
+  "_id": {
+    "$oid": "65c00928b1692ee6ebac4075"
+  },
+  "Username": "john_doe",
+  "Email": "john@example.com",
+  "Password": "password123",
+  "Contact": 1234567890,
+  "Location": "Delhi",
+  "Detail": "Some details about the user",
+  "Sports": "Football",
+  "Birthday": "1990-01-01"
+},
+{
+  "_id": {
+    "$oid": "65c011a5fd04cb6b4608c9a4"
+  },
+  "Username": "user4",
+  "Email": "something@somethingelse.com",
+  "Password": "$2a$12$7jz5DGkPF3xbTf6NOHRnPe1.1dfAKgpyRC4yFDuLVkL0gBlFa1aLm",
+  "Location": "Delhi",
+  "Age": 20,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c011d4fd04cb6b4608c9a6"
+  },
+  "Username": "user5",
+  "Email": "fdkfjsdlkfjsd@dlkfdg.in",
+  "Password": "$2a$12$wMKx1NpueVjFLQmuya66WuhvsSAr9dMds/Syf9eM1gtIXoNHglSMS",
+  "Location": "Delhi",
+  "Age": 32,
+  "__v": 0,
+  "Sports": "Badminton"
+},
+{
+  "_id": {
+    "$oid": "65c0128885b1cbdbc2a5b9b3"
+  },
+  "Username": "user6",
+  "Email": "hhhhd@jjjd.com",
+  "Password": "$2a$12$a/GYl9YF31hupuuIpzpMB.mbPu7tg0HLSanHqH.ClOfzIgafP0jEm",
+  "Location": "Delhi",
+  "Sports": "Football",
+  "Age": 23,
+  "__v": 0
+}]

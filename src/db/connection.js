@@ -1,8 +1,8 @@
-const mongoose=require("mongoose");
-mongoose.connect("mongodb://localhost:27017/Info").then(()=>{
+const mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost:27017/Info").then(() => {
     console.log("connection successfull");
-}).catch((e)=>{
-    console.log("error cought",e);
+}).catch((e) => {
+    console.log("error cought", e);
 })
 
-module.exports=mongoose;
+module.exports = mongoose;
